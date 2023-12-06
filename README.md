@@ -3,6 +3,7 @@ Code to build a consensus spectrum library for DNA adductomics
 
 To build a consunsus spectrum from our acquiored data, the following simple code lines are used:
 
+```{r}
 library(DnaAdductBuilder)
 
 
@@ -17,3 +18,4 @@ processWorkflow(mzMLFile, # the mzML file converted from the raw or .d file for 
 				clean = T, # do you want to clean the spectra of noise?  Following 2 parameters apply:
 				min_noise = 0.01, # noise floor of which to strip peaks (remove from spectra, relative to max intensity
 				contamMZ = 173.52815) # any individual identified contaminant peak to remove
+```
